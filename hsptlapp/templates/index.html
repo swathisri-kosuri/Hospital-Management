@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h2><center>Medi Care Center</center></h2>
+<style>
+      body {
+        background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3YxMTY2LWJhY2tncm91bmQtMDgteC5qcGc.jpg');
+        background-size: cover;
+      }
+    .custom-button {
+    width: 350px;
+    height: 130px;
+    position:absolute;
+    bottom:230px;
+    right: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .custom-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .custom-button>div {
+        margin: 0 10px;
+    }
+    
+</style>
+
+<body>
+    <div class="custom-button">
+        <div>
+    <img src="https://cdn4.iconfinder.com/data/icons/professions-1-2/151/3-512.png" height="190" width="200"><br><br>
+    <a class="btn btn-secondary" href="{% url 'hsptlapp:login' %}">Doctors Login</a>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+    <img src="https://cdn-icons-png.flaticon.com/512/4139/4139988.png" height="190" width="200"><br><br>
+    <a class="btn btn-secondary" href="{% url 'hsptlapp:patient_login' %}">Patient Login</a>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+    <img src="https://png.pngtree.com/png-clipart/20230408/original/pngtree-administration-of-women-job-vacancies-png-image_9037121.png" height="220" width="230">
+    <br>
+    <a class="btn btn-secondary" href="{% url 'hsptlapp:adm_login' %}">Admin Login</a>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+</div>
+    {% endblock %}
+</body>
+</html>
+

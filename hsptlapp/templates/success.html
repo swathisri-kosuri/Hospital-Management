@@ -1,0 +1,37 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Custom styles */
+    .custom-green-button {
+        background-color: green;
+        color: white;
+    }
+
+    .custom-large-button {
+        padding: 8px 8px;
+        font-size: 10px;
+    }
+</style>
+<body>
+<center>
+    <div class="col-md-4 offset-md-4" style="margin-top:90px; margin-bottom: 120px">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZF7R2wch3zTxJ0eJE8zLpgT43ZwAxYWEtuJfoXZmHbtmuTYnV6rJYyuobKILxm5kG6I&usqp=CAU" height="250" width="250">
+    <h1>Appointment Sucessfull</h1>
+    <button class="btn custom-green-button custom-large-button">
+        <a href="{% url 'hsptlapp:view_appoint' %}" style="color: white; text-decoration: none;">View Appointment</a>
+    </button>
+    <button class="btn custom-green-button custom-large-button">
+    <a class="btn btn-block btn-success" href="{% url 'hsptlapp:patient_login' %}" style="color: white; text-decoration: none;">Back</a>
+</button>
+    </div>
+</center>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<style>
+        body {
+        background-image: url('https://www.shemanenugent.rocks/wp-content/uploads/2018/05/Background-Watercolor-Soft.jpg');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .custom-button>div {
+        margin: 0 10px;
+    }
+</style>
+        
+</style>
+<body>
+    <div class="row my-4">
+        <div class="col-md-12">
+           
+        </div>
+    
+        <body>
+                <div class="custom-button">
+                <div>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/797/673/small/male-doctor-3d-profession-avatars-illustrations-png.png" height="200" width="200"><br>
+            <a class="btn btn-secondary" href="{% url 'hsptlapp:cardiologist' %}">Cardiologist</a>
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">High blood pressure</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">High cholesterol</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Exhaustion</a>
+        </div>
+    </div>
+</div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/797/656/small/female-doctor-3d-profession-avatars-illustrations-png.png" height="200" width="200"><br>
+            <a class="btn btn-secondary" href="{% url 'hsptlapp:Dermotologist' %}">Dermatologist</a>
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Acne</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">skin infections</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Rashes</a>
+        </div>
+    </div>
+</div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div>
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/doctor-avatar-10107433-8179550.png?f=webp" height="200" width="200"><br>
+            <a class="btn btn-secondary" href="{% url 'hsptlapp:Gnecologist' %}">Gynecologist</a>
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Back pain in pregnancy</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Indigestion</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Bleeding gums in pregnancy.</a>
+        </div>
+    </div>
+</div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/027/312/338/small/portrait-of-a-female-doctor-with-stethoscope-isolated-essential-workers-avatar-icons-characters-for-social-media-user-profile-website-and-app-3d-render-illustration-png.png" height="200" width="200"><br>
+            <a class="btn btn-secondary" href="{% url 'hsptlapp:Neurologist' %}">Neurologist</a>
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Muscle cramps</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Leg weekness</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Trip and fall</a>
+        </div>
+    </div>
+</div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div>
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/boy-avatar-6299533-5187865.png" height="200" width="200"><br>
+            <a class="btn btn-secondary" href="{% url 'hsptlapp:Allergist' %}">Allergist</a>
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Asthma.</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Dust Allergy</a>
+            <a class="dropdown-item" href="{% url 'hsptlapp:Add_Appointment' %}">Rhinitis</a>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </body>
+        
+</body>
+</html>
